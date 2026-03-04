@@ -1,0 +1,37 @@
+# Environment and Configuration
+# NOTE: .env and RSA keys are intentionally committed for demo purposes.
+# In a real project, NEVER commit secrets. Use a secrets manager or CI/CD env vars.
+.env.local
+.env.*.local
+
+# Encryption Keys
+# *.pem  <-- intentionally included in repo for demo; see README
+*_key_base64.txt
+
+# Backend
+backend/target/
+backend/*.iml
+backend/out/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
